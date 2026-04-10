@@ -74,7 +74,7 @@ h1.nm em{font-style:italic;color:var(--blue)}
 /* SECTIONS */
 section{padding:5.5rem 5vw}
 .inner{max-width:1160px;margin:0 auto}
-.sec-header{margin-bottom:3rem}
+.sec-header{margin-bottom:1.5rem}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem}
 .eyebrow::before{content:'';width:1.5rem;height:2px;background:var(--blue);border-radius:2px}
 .sec-header h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;color:var(--ink)}
@@ -84,6 +84,8 @@ section{padding:5.5rem 5vw}
 #about{background:var(--white)}
 .about-grid{display:grid;grid-template-columns:3fr 2fr;gap:5rem;align-items:start}
 .about-text{font-size:.97rem;line-height:1.9;color:var(--ink2)}
+.about-text a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(37,99,235,.3);transition:border-color .2s}
+.about-text a:hover{border-bottom-color:var(--blue)}
 .about-text p+p{margin-top:1rem}
 .quote-box{background:linear-gradient(135deg,var(--blue-l),var(--teal-l));border-radius:var(--r);padding:1.5rem;margin-top:1.5rem;border:1px solid rgba(37,99,235,.12)}
 .quote-box p{font-size:.88rem;color:var(--ink2);font-style:italic;margin:0}
@@ -94,9 +96,6 @@ section{padding:5.5rem 5vw}
 .iv{font-size:.85rem;color:var(--ink);line-height:1.5}
 .skills{margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.5rem}
 .sk{font-size:.72rem;font-weight:500;padding:.3rem .75rem;background:var(--white);border:1px solid var(--line);border-radius:8px;color:var(--ink2)}
-
-.about-text a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(37,99,235,.3);transition:border-color .2s}
-.about-text a:hover{border-bottom-color:var(--blue)}
 
   
 /* PROJECTS */
@@ -264,15 +263,15 @@ footer{background:var(--ink);padding:2.5rem 5vw;display:flex;justify-content:spa
           <h2>Background & <em>Expertise</em></h2>
         </div>
 <div class="about-text">
-  <p>I am a researcher and educator based in Dhaka, Bangladesh. My work sits at the intersection of machine learning, NLP, and human-centered computing, with a focus on building AI systems that are not just accurate but genuinely trustworthy and interpretable in practice.</p>
+  <p>I am a researcher based in Dhaka, Bangladesh. My work is about one question: how do we build AI systems that the people who use them can actually understand, question, and trust? I work at the intersection of machine learning, NLP, and human-centered computing — not just building models, but studying how real people make sense of AI outputs, especially in high-stakes contexts like health.</p>
 
-  <p>I combine technical ML work with empirical human-centered methods — running surveys and interviews, designing controlled experiments, and conducting qualitative studies across health, misinformation, and responsible AI. My research has been published in <a href="https://www.jmir.org" target="_blank">JMIR</a>, <a href="https://chi2026.acm.org" target="_blank">ACM CHI</a>, <a href="https://www.ubicomp.org" target="_blank">ACM UbiComp</a>, <a href="https://dl.acm.org/journal/jcss" target="_blank">ACM JCSS</a>, <a href="https://ieeexplore.ieee.org" target="_blank">IEEE</a>, <a href="https://link.springer.com" target="_blank">Springer</a>, and <a href="https://academic.oup.com" target="_blank">Oxford University Press</a>. [<a href="#publications">Full publication list</a>]</p>
+  <p>Most recently, I led a participatory study with clinicians, XAI developers, and end users to understand what "explainability" actually means to people on the ground — not just technically. That work produced a five-pillar explainability framework, currently <a href="https://www.jmir.org" target="_blank">in press at JMIR (Q1, IF 6.0)</a>. I am now extending it through a controlled experiment examining whether LLM-generated explanations genuinely help people make better health decisions, or simply create a false sense of confidence.</p>
 
-  <p>My most recent project examines how people — clinicians, developers, and end users — actually understand and interact with AI-driven health applications. The result is a participatory five-pillar explainability framework, currently <a href="https://www.jmir.org" target="_blank">in press at JMIR (Q1, IF 6.0)</a>. I am now extending this work through a controlled experiment on whether LLM-generated explanations help or harm health risk decisions.</p>
+  <p>On the governance side, I co-led a multi-country qualitative study spanning Bangladesh, India, Pakistan, and Nepal, interviewing developers, policymakers, academics, and community representatives about AI accountability. That work has appeared at <a href="https://chi2026.acm.org" target="_blank">ACM CHI 2026</a>, <a href="https://ictd.acm.org" target="_blank">ACM ICTD 2024</a>, and <a href="https://academic.oup.com" target="_blank">Oxford University Press</a>. Earlier in my research career, I worked on interpretable ML for clinical risk prediction and built one of the earliest fake news detection datasets for the Bengali language.</p>
 
-  <p>On the governance side, I co-led a multi-country qualitative study across Bangladesh, India, Pakistan, and Nepal examining AI accountability gaps — work that resulted in publications at <a href="https://chi2026.acm.org" target="_blank">ACM CHI 2026</a>, <a href="https://ictd.acm.org" target="_blank">ACM ICTD 2024</a>, and <a href="https://academic.oup.com" target="_blank">Oxford University Press</a>.</p>
+  <p>My research has appeared in <a href="https://www.jmir.org" target="_blank">JMIR</a>, <a href="https://chi2026.acm.org" target="_blank">ACM CHI</a>, <a href="https://www.ubicomp.org" target="_blank">ACM UbiComp</a>, <a href="https://dl.acm.org/journal/jcss" target="_blank">ACM JCSS</a>, <a href="https://ieeexplore.ieee.org" target="_blank">IEEE</a>, <a href="https://link.springer.com" target="_blank">Springer</a>, and <a href="https://academic.oup.com" target="_blank">Oxford University Press</a>. [<a href="#publications">Full list</a>]</p>
 
-  <p>I also teach. I serve as Senior Lab Instructor at the <a href="https://ece.northsouth.edu" target="_blank">Department of ECE, North South University</a>, where I have taught C, Java, and C++ to over 1,000 students across more than 10 semesters. I also teach Python as an Adjunct Lecturer in CSE at <a href="https://www.iub.edu.bd" target="_blank">Independent University, Bangladesh</a>. [<a href="#experience">Teaching details</a>]</p>
+  <p>I also teach — C, Java, and C++ at <a href="https://www.northsouth.edu" target="_blank">North South University</a> and Python at <a href="https://www.iub.edu.bd" target="_blank">Independent University, Bangladesh</a> — where I have worked with over 1,000 students. [<a href="#experience">Teaching details</a>]</p>
 </div>
         <div class="quote-box">
           <p>"My goal is to make AI systems that are not just accurate, but interpretable, accountable, and genuinely useful for the people who need them most."</p>
