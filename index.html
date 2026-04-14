@@ -195,7 +195,7 @@ footer{background:var(--ink);padding:2.5rem 5vw;display:flex;justify-content:spa
 </style>
 </head>
 <body>
-<input type="file" id="photo-input" accept="image/*">
+<!-- This is a comment <input type="file" id="photo-input" accept="image/*"> -->
 
 <nav>
   <a href="#hero" class="nav-logo"><span class="ndot"></span>Farzana Islam</a>
@@ -228,16 +228,17 @@ footer{background:var(--ink);padding:2.5rem 5vw;display:flex;justify-content:spa
   <div class="hero-right">
     <div class="photo-card">
       <div class="photo-frame" id="photo-frame" onclick="document.getElementById('photo-input').click()" title="Click to upload photo">
-        <img id="photo-img" src="" alt="Farzana Islam" style="display:none">
-        <svg id="photo-placeholder" width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- This is a comment <img id="photo-img" src="" alt="Farzana Islam" style="display:none"> -->
+        <img id="photo-img" src="https://github.com/user-attachments/assets/bd1baf78-4065-44ff-ad87-ffdde3b6bb3f" alt="Farzana Islam" style="display:block">
+        <!-- This is a comment <svg id="photo-placeholder" width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg"> 
           <defs><linearGradient id="ppg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#EEF3FF"/><stop offset="100%" stop-color="#E6F9FA"/></linearGradient></defs>
           <circle cx="80" cy="80" r="80" fill="url(#ppg)"/>
           <circle cx="80" cy="64" r="27" fill="#C7D7FD"/>
           <path d="M22 144 Q22 106 80 106 Q138 106 138 144" fill="#C7D7FD"/>
-        </svg>
+        </svg> -->
         <div class="overlay"><span class="overlay-txt">Upload<br>photo</span></div>
       </div>
-      <p class="upload-hint" id="upload-hint">Click to <span onclick="document.getElementById('photo-input').click()">upload photo</span></p>
+      <!-- This is a comment <p class="upload-hint" id="upload-hint">Click to <span onclick="document.getElementById('photo-input').click()">upload photo</span></p> -->     
       <div class="photo-name">Farzana Islam</div>
       <!-- <div class="photo-role">Academic</div> -->
       <div class="icon-btns">
