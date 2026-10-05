@@ -884,37 +884,5 @@ footer{background:var(--ink);padding:2.5rem 5vw;display:flex;justify-content:spa
     <a href="https://scholar.google.com/citations?user=farzana-islam" target="_blank">Scholar</a>
   </div>
 </footer>
-
-<script>
-(function(){
-  const input = document.getElementById('photo-input');
-  const img = document.getElementById('photo-img');
-  const placeholder = document.getElementById('photo-placeholder');
-  const hint = document.getElementById('upload-hint');
-
-  function applyPhoto(dataUrl){
-    img.src = dataUrl;
-    img.style.display = 'block';
-    if(placeholder) placeholder.style.display = 'none';
-    if(hint) hint.style.display = 'none';
-  }
-
-  try {
-    const saved = localStorage.getItem('fi_profile_photo');
-    if(saved) applyPhoto(saved);
-  } catch(e){}
-
-  input.addEventListener('change', function(){
-    const file = this.files[0];
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onload = function(e){
-      applyPhoto(e.target.result);
-      try { localStorage.setItem('fi_profile_photo', e.target.result); } catch(e){}
-    };
-    reader.readAsDataURL(file);
-  });
-})();
-</script>
 </body>
 </html>
